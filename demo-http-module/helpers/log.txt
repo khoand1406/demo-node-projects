@@ -1,0 +1,10 @@
+Tue Jul 29 2025 17:01:03 GMT+0700 (Indochina Time) POST /submit failed. Invalid JSON: email=hello%40world.com&password=123
+Tue Jul 29 2025 17:05:16 GMT+0700 (Indochina Time) Get access to /submit FAILED ! Resource not found. Response code: 404 Not Found
+Tue Jul 29 2025 17:05:23 GMT+0700 (Indochina Time) Successfully make GET request to /login and get its response to render page. Response code: 200 OK
+Tue Jul 29 2025 17:05:37 GMT+0700 (Indochina Time) POST /submit failed. Invalid JSON: email=hello%40world.com&password=123
+Tue Jul 29 2025 17:11:21 GMT+0700 (Indochina Time) Successfully make GET request to /login and get its response to render page. Response code: 200 OKTue Jul 29 2025 17:14:24 GMT+0700 (Indochina Time) POST /submit failed. Invalid JSON: email=hello%40world.com&password=123Tue Jul 29 2025 17:20:32 GMT+0700 (Indochina Time) Successfully make GET request to /login and get its response to render page. Response code: 200 OK 
+Tue Jul 29 2025 17:20:40 GMT+0700 (Indochina Time) Get access to /.well-known/appspecific/com.chrome.devtools.json FAILED ! Resource not found. Response code: 404 Not Found 
+Tue Jul 29 2025 17:22:24 GMT+0700 (Indochina Time) Successfully make GET request to /login and get its response to render page. Response code: 200 OK 
+Tue Jul 29 2025 17:22:38 GMT+0700 (Indochina Time) Get access to /.well-known/appspecific/com.chrome.devtools.json FAILED ! Resource not found. Response code: 404 Not Found 
+Tue Jul 29 2025 17:22:40 GMT+0700 (Indochina Time) POST /submit with data: {"email":"hello@world.com","password":"123"} 
+Tue Jul 29 2025 17:22:40 GMT+0700 (Indochina Time) Get access to /.well-known/appspecific/com.chrome.devtools.json FAILED ! Resource not found. Response code: 404 Not Found 
