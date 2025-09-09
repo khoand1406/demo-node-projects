@@ -1,1 +1,6 @@
+
+/dist
+.env
 /fetch-data/node_modules
+/demo-file-system-event-emitter/node_modules
+/demo-file-system-event-emitter/dist    
