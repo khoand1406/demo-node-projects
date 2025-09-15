@@ -1,0 +1,11 @@
+{
+  "name": "demo-streams",
+  "version": "1.0.0",
+  "description": "More details demo for streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

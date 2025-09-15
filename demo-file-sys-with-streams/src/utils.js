@@ -32,14 +32,14 @@ export function getFilePath(){
 }
 
 export function getFileDescriptor(){
-    const filePath= path.join(__dirname , 'logs', 'sample.txt');
+    const filePath= path.join(__dirname , 'logs', 'large.json');
     fs.open(filePath, 'r', (err, fd)=> {
         if(err) return console.error('Error:', err);
         console.log('\nFile descriptor:', fd);
-        const buffer= Buffer.alloc(100);
+        const buffer= Buffer.alloc(200);
         fs.read(fd, buffer, 0, buffer.length, 0, (err, bytesRead)=> {
             if(err) return console.error('Error:', err);
-            console.log(`\nRead ${bytesRead} bytes from file:`);
+            console.log(`\nRead ${bytesRead} bytes from file: ${filePath}`);
             console.log(buffer.toString('utf-8', 0, bytesRead));
             fs.close(fd, (err)=> {
                 if(err) return console.error('Error closing file:', err);
@@ -52,7 +52,7 @@ export function readFileSync(){
     const filePath= path.join(__dirname , 'logs', 'large.json');
     try{
         const data= fs.readFileSync(filePath, 'utf-8');
-        console.log('\nSynchronous file read:', data.slice(0, 100) + '...');  
+        console.log('\nSynchronous file read:', data.slice(0, 100) + '...'); 
         
     }catch(err){
         console.error('Error reading file:', err);
@@ -168,7 +168,8 @@ export function writeStream(){
         writeStream.on('error', (err)=> {
             console.error('Error writing file stream:', err);
         });
-        
+
+
     }catch(err){
         console.error('Error with stream:', err);
     }
